@@ -21,6 +21,11 @@ stage('Release'){
                echo "Release Completed..."
                 }
                 }
+stage('custom'){
+           steps{
+               echo "custom stage Completed..."
+                }
+                }
 }
 }
 
