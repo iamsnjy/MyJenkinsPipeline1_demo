@@ -5,6 +5,8 @@ pipeline {
             steps{
                 //git 'https://github.com/iamsnjy/MyJenkinsPipeline1_demo.git'
                 echo "stage1 of pipeline"
+                echo 'agent any means, using the local host server env for running the pipeline script and its actions.'
+                echo 'agent can be set to i) docker image'
             }
         }
         
