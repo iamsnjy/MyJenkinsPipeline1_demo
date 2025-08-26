@@ -1,31 +1,22 @@
-pipeline{
-agent any
-stages{
-stage('Build'){
-             steps{
-               echo "Build Completed..."
-                  }
-              }
-stage('Deploy'){
-          steps{
-               echo "Deploy Completed..."
-              }
-              }
-stage('Test'){
-          steps{
-               echo "Test Completed..."
-              }
-              }
-stage('Release'){
-           steps{
-               echo "Release Completed..."
-                }
-                }
-stage('custom'){
-           steps{
-               echo "custom stage Completed..."
-                }
-                }
-}
+pipeline {
+    agent any
+    stages{
+        stage('stage1'){
+            steps{
+                //git 'https://github.com/iamsnjy/MyJenkinsPipeline1_demo.git'
+                echo "stage1 of pipeline"
+            }
+        }
+        
+        
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+                sh 'pwd'
+                sh 'ls -l'
+                //sh 'python3 --version'
+            }
+        }
+    }
 }
 
