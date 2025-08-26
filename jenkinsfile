@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages{
-        stage('stage1'){
+        stage('stage 1'){
             steps{
                 //git 'https://github.com/iamsnjy/MyJenkinsPipeline1_demo.git'
                 echo "stage1 of pipeline"
@@ -9,12 +9,15 @@ pipeline {
         }
         
         
-        stage('Hello') {
+        stage('stage 2') {
             steps {
                 echo 'Hello World'
                 sh 'pwd'
                 sh 'ls -l'
                 sh 'python3 --version'
+                echo 'Running a python file...'
+                sh 'python3 1_frequency.py'
+
             }
         }
     }
