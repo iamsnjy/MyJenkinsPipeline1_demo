@@ -16,7 +16,7 @@ pipeline {
                 sh 'ls -l'
                 sh 'python3 --version'
                 echo 'Running a python file...'
-                sh 'python3 1_frequency.py'
+                sh 'python3 coding/1_frequency.py'
 
             }
         }
